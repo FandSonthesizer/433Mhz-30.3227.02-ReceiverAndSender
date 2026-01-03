@@ -1,12 +1,14 @@
 
 # 433 MHz TFA Dostmann 30.3227.02 – Receiver & Sender
-Based on the TFAReceiver fork from spb2005 url=https://github.com/Spb2005/TFAReceiver 
-I expanded on that by adding a code to allow to send the exact dostman frames that can be picked up by the TFAReceiver.
+Based on the TFAReceiver fork from spb2005 url=https://github.com/Spb2005/TFAReceiver. **Thanks spb2005, your work was a great help and a very good starting point!**
+I added to that with a code to allow to send the exact dostmann frames that can be picked up by the TFAReceiver.
 
 This project implements both a **receiver** and a **sender** for TFA Dostmann
 30.3227.02 / 30.3208.x temperature & humidity sensors.  
 
-My goal was to add the original Dostmann senders into a homespan integration and add custom sender of my own making.
+This was my christmas 2025 holiday fun project. It kept me occupied for almost a full week, using not only the computer with the arduino ide, but also an oszilloscope and a logic analyser.
+My goal was to add the original Dostmann senders into a homespan integration and add custom senders of my own making.
+Quite some detective work and, I have to admit, some help from a KI. I learned that to use a KI in such a context, you have to question what it suggests, do a lot work and reasoning yourself to get the KI back on track. Only then I came up with a solution. It boils down to: **If you know what you do, if you could do it without a KI, then a KI can be a lot of help. Else don't bother!**
 
 The optional goal is to read original TFA sensor frames and also **generate compatible
 frames** so that an original TFA base station accepts them as if they were real sensors. Sp far the base station does not read the frames from this lib. I guess the bit timing is not close enough. But the receiver using a cheap RxB8 picks up the Dostmann sender frames and our frames just fine.
