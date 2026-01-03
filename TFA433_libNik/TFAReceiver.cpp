@@ -38,14 +38,14 @@ void TFAReceiver::begin() {
 void TFAReceiver::checkBuf() { //Checking buffer, if Checksum matches
 
   if (checkBufFlag) {
-    for (int i = 0; i < bitCnt; i++) {
+    /*for (int i = 0; i < bitCnt; i++) {
       Serial.print(_rec[i], HEX);
     }
     Serial.println("");
     for (int i = 0; i < (BUFF_SIZE - 1); i++) {
       Serial.print(buff[i], HEX);Serial.print(";");
     }
-    Serial.println("");
+    Serial.println("");*/
     byte expected = buff[BUFF_SIZE - 1];
     byte calculated = lfsr_digest8((const byte*)buff, BUFF_SIZE - 1, 0x98, 0x3e) ^ 0x64;
 
