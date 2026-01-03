@@ -1,0 +1,20 @@
+These frames were send by original Dostmann temp senders:
+010001100000011100000011000010110000110100011001
+46;7;3;B;D;
+Type: 70 ID: 7 Battery OK: 1 Channel: 1 Temperature: 3.28 Humidity: 13 show on Base as 3.2
+-----------
+010001100010101100010011010011100000110010010010
+46;2B;13;4E;C;
+Type: 70 ID: 43 Battery OK: 1 Channel: 2 Temperature: 7.00 Humidity: 12 show on Base as  7.1
+-----------
+010001100000011100000011000011000000110111100001
+46;7;3;C;D;
+Type: 70 ID: 7 Battery OK: 1 Channel: 1 Temperature: 3.33 Humidity: 13 show on Base as  3.3
+----------------------
+010001100000011100000011000011000000110111100001
+46;7;3;C;D;
+Type: 70 ID: 7 Battery OK: 1 Channel: 1 Temperature: 3.33 Humidity: 13 show on Base as  3.3
+---
+010001100000011100000100000000010000110111011110
+46;7;4;1;D;
+Type: 70 ID: 7 Battery OK: 1 Channel: 1 Temperature: 16.94 Humidity: 13 show on Base as  16.9
