@@ -5,8 +5,12 @@ I expanded on that by adding a code to allow to send the exact dostman frames th
 
 This project implements both a **receiver** and a **sender** for TFA Dostmann
 30.3227.02 / 30.3208.x temperature & humidity sensors.  
-The goal is to read original TFA sensor frames and also **generate compatible
-frames** so that an original TFA base station accepts them as if they were real sensors.
+
+My goal was to add the original Dostmann senders into a homespan integration and add custom sender of my own making.
+
+The optional goal is to read original TFA sensor frames and also **generate compatible
+frames** so that an original TFA base station accepts them as if they were real sensors. Sp far the base station does not read the frames from this lib. I guess the bit timing is not close enough. But the receiver using a cheap RxB8 picks up the Dostmann sender frames and our frames just fine.
+For the sender I used a cheap 433Mhz sender nothing special. Important to add a 17.2cm Antenna to both sender and receiver!
 
 ## ✨ Features
 
