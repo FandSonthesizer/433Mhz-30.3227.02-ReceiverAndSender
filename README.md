@@ -14,7 +14,8 @@ The optional goal is to read original TFA sensor frames and also **generate comp
 frames** so that an original TFA base station accepts them as if they were real sensors. Sp far the base station does not read the frames from this lib. I guess the bit timing is not close enough. But the receiver using a cheap RxB8 picks up both the Dostmann sender frames and our frames just fine.
 For the sender I used a cheap 433Mhz sender nothing special. Important to add a 17.2cm Antenna to both sender and receiver! As receiver mcu I used a Nano r4 board or an ESP32-Wroom - both work fine (make sure to use PIO27 on the ESP!), for the sender a plain Nano.  
  **Beware the ESP32 can only tolerate 3.3V on the input pin, so a combination of a 1.8K and a 1k resistor to GND divides the 5V to 3.3V** The Nano R4 is happy with the 5V level.
- 
+If you like to see the rats nest of wires on my breadboard, check the pictures folder. It shows the actual sender and receiver I was using :-)
+
 ## ✨ Features
 
 ### ✅ Receiver (Arduino Nano R4 / ESP32)
